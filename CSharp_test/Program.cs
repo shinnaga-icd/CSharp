@@ -8,7 +8,7 @@ namespace CSharp_test
 {
     class Program
     {
-//        private const string PLAIN_TEXT = "id=1234567890abcd,timestamp=1234567890";
+        private const string PLAIN_TEXT = "id=1234567890abcd,timestamp=1234567890";
 
         //16進数文字列
         private const string KEY = "8e94b31ddaffbce26447d4af349a4b5f8a181388c30c28e52da66f2730c5f97d";
@@ -31,13 +31,12 @@ namespace CSharp_test
 
 
                     //Encrypt
-//                    Byte[] encrypted = EncryptStringToBytes(PLAIN_TEXT, key, iv);
+                    Byte[] encrypted = EncryptStringToBytes(PLAIN_TEXT, key, iv);
 
                     //Decrypt
                     string roundtrip = DecryptStringFromBytes(Convert.FromBase64String(ENCED), key, iv);
 
-//                    Console.WriteLine(PADDING.ToString() + " : " + Convert.ToBase64String(encrypted));
-                    Console.WriteLine(PADDING.ToString() + " : " + roundtrip);
+                    Console.WriteLine(PADDING.ToString() + " : " + Convert.ToBase64String(encrypted));
                 }
                 catch (Exception ex)
                 {
