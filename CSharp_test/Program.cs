@@ -13,7 +13,6 @@ namespace CSharp_test
         //16進数文字列
         private const string KEY = "8e94b31ddaffbce26447d4af349a4b5f8a181388c30c28e52da66f2730c5f97d";
         private const string IV = "45e3e4ab8702e96e46c04df016c41283";
-        private const string ENCED = "eU13U3FCVENkc1BrZE41aEhvK01kcUVxL09BZVF2bEJwNEZ1Nm14cU1xUThabFB2U2FtODNRbEY0cGdHWVJFTzBtTU1wazZvTXRiOHNYNnppd0l2ekdjbFpPN2wzdHRuK1RDK2lsQnJyalFWaytaTlFqemNTV3VYYWlkQzFJRTN4Y3hwN3VUMS9MbFA0R05XSytxclk3UUFyQmhlc2NDQXRrd05vTmVuajM5OGlnWXo4OE4vZ1NYdnVENWlMdzJoTEQxYlE2ek9OMXQzVGs4RUtpcm5SRnQraG1wMDhOMWFySnMyc2tCa0gwSzJra1pmSnloejRCcWt1aHIyU0wyc3hnamlBTmNGeFBSaU1LV0RYUmo0WjdGNHpKalN4R2RNUVVpT1ZiWnVJSHhJU2E2NENkUHJCMGg4SVlNRUVaenFCT2grbVlGTGNBNzdiQU9CL3c3YXhtbE1Jb0VkS0k2UDRPbUIxcHY0Y1JtZTJwR0M5TE05Y1NBRmxINUU3cXIxakdldVVZOHE5OTJNY1dmeTZ2emJVWXBWSnNVNFVNVXVFblZxLy9SN3huVTViMWI4ZlRGVytSNlhNdkdMa1pQQXRsODJ6N3c0cTE1UkN4cTFwS1lpL1EzbVRLZjJIR3VCSEF0YlkyUjdnWnd1cGxseGplWGdxbGM2SnN5UnBuaG1KcGoxNU9lRDdPRy92anFNRWx2dzhocm51alVueEFYRHhEeFd4NWM2UFM1dngvditPNjFQamZPbjFRc3NRUjVlWnpxTFFKSGRsNXl6eDJEQ29ZakR3V3RGWi9lZ1VyK2R3MW9SNVgvTTJyR09rb3Vjd2pobzVMblJsbVhwT1A3bQ==";
 
         private static PaddingMode PADDING;
 
@@ -34,7 +33,7 @@ namespace CSharp_test
                     Byte[] encrypted = EncryptStringToBytes(PLAIN_TEXT, key, iv);
 
                     //Decrypt
-                    string roundtrip = DecryptStringFromBytes(Convert.FromBase64String(ENCED), key, iv);
+                    string roundtrip = DecryptStringFromBytes(encrypted, key, iv);
 
                     Console.WriteLine(PADDING.ToString() + " : " + Convert.ToBase64String(encrypted));
                 }

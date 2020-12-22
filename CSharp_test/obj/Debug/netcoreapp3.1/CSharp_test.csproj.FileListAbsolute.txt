@@ -3,7 +3,6 @@
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/bin/Debug/netcoreapp3.1/CSharp_test.runtimeconfig.dev.json
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/bin/Debug/netcoreapp3.1/CSharp_test.dll
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/bin/Debug/netcoreapp3.1/CSharp_test.pdb
-/Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/obj/Debug/netcoreapp3.1/CSharp_test.csprojAssemblyReference.cache
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/obj/Debug/netcoreapp3.1/CSharp_test.AssemblyInfoInputs.cache
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/obj/Debug/netcoreapp3.1/CSharp_test.AssemblyInfo.cs
 /Users/shinji.nagasaki/Projects/CSharp_test/CSharp_test/obj/Debug/netcoreapp3.1/CSharp_test.csproj.CoreCompileInputs.cache
